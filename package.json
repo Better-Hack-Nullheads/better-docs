@@ -1,12 +1,12 @@
 {
-    "name": "@auto-doc-gen/universal",
+    "name": "@better-docs/universal",
     "version": "1.0.0",
     "description": "Universal TypeScript framework documentation generator - works with Express, NestJS, Fastify, Koa and more",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "bin": {
-        "auto-doc-gen-universal": "dist/cli.js",
-        "autodocgen": "dist/cli.js"
+        "better-docs": "dist/cli.js",
+        "betterdocs": "dist/cli.js"
     },
     "scripts": {
         "build": "tsc",
@@ -34,7 +34,7 @@
         "@ai-sdk/anthropic": "^1.0.0",
         "@ai-sdk/google": "^1.0.0",
         "@ai-sdk/openai": "^1.0.0",
-        "@auto-doc-gen/universal": "file:auto-doc-gen-universal-1.0.0.tgz",
+        "@better-docs/universal": "file:better-docs-universal-1.0.0.tgz",
         "ai": "^3.0.0",
         "commander": "^11.0.0",
         "dotenv": "^17.2.3",
@@ -56,10 +56,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/better-hack/auto-doc-gen-universal.git"
+        "url": "https://github.com/better-hack/better-docs.git"
     },
     "bugs": {
-        "url": "https://github.com/better-hack/auto-doc-gen-universal/issues"
+        "url": "https://github.com/better-hack/better-docs/issues"
     },
-    "homepage": "https://github.com/better-hack/auto-doc-gen-universal#readme"
+    "homepage": "https://github.com/better-hack/better-docs#readme"
 }

@@ -214,9 +214,9 @@ export class ConfigManager {
     public loadConfigFile(configPath?: string): void {
         const paths = [
             configPath,
-            './autodocgen.config.json',
-            './.autodocgen.json',
-            './autodocgen.json',
+            './betterdocs.config.json',
+            './.betterdocs.json',
+            './betterdocs.json',
         ].filter(Boolean) as string[]
 
         for (const path of paths) {

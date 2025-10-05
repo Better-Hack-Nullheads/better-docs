@@ -1,4 +1,4 @@
-// Main exports for @auto-doc-gen/universal
+// Main exports for @better-docs/universal
 
 export { MongoDBAdapter } from './adapters/mongodb-adapter'
 export { ConfigManager } from './config/config'

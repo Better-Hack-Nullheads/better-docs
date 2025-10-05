@@ -18,7 +18,7 @@ const program = new Command()
 const configManager = ConfigManager.getInstance()
 
 program
-    .name('auto-doc-gen-universal')
+    .name('better-docs')
     .description('Universal TypeScript framework documentation generator')
     .version('1.0.0')
     .option('-c, --config <file>', 'Configuration file path')
@@ -34,9 +34,9 @@ program
         const configFile = thisCommand.getOptionValue('config')
         const configPaths = [
             configFile,
-            './autodocgen.config.json',
-            './.autodocgen.json',
-            './autodocgen.json',
+            './betterdocs.config.json',
+            './.betterdocs.json',
+            './betterdocs.json',
         ].filter(Boolean) as string[]
 
         const configExists = configPaths.some((path) => existsSync(path))
@@ -45,10 +45,10 @@ program
             console.log('❌ No configuration file found!')
             console.log('')
             console.log('📋 Please create a configuration file first:')
-            console.log('   npx @auto-doc-gen/universal config')
+            console.log('   npx @better-docs/universal config')
             console.log('')
             console.log(
-                '💡 This will generate autodocgen.config.json with default settings.'
+                '💡 This will generate betterdocs.config.json with default settings.'
             )
             console.log('   You can then edit it to match your needs.')
             process.exit(1)
@@ -202,11 +202,11 @@ program
 
 program
     .command('config')
-    .description('Generate configuration file for auto-doc-gen')
+    .description('Generate configuration file for better-docs')
     .option(
         '-o, --output <file>',
         'Output configuration file path',
-        'autodocgen.config.json'
+        'betterdocs.config.json'
     )
     .option(
         '--template <template>',
@@ -231,9 +231,7 @@ program
             console.log(
                 '2. Set your AI API key in the config or environment variables'
             )
-            console.log(
-                '3. Run: auto-doc-gen-universal analyze <your-project-path>'
-            )
+            console.log('3. Run: better-docs analyze <your-project-path>')
             console.log('')
             console.log('🔑 Environment variables you can set:')
             console.log('   GOOGLE_AI_API_KEY=your_key_here')
@@ -251,7 +249,7 @@ program
     .option(
         '-c, --config <file>',
         'Configuration file path',
-        'autodocgen.config.json'
+        'betterdocs.config.json'
     )
     .action((options) => {
         try {
