@@ -1,0 +1,36 @@
+{
+    "ai": {
+        "provider": "google",
+        "model": "gemini-2.5-flash",
+        "apiKey": "",
+        "temperature": 0.7,
+        "maxTokens": 4000
+    },
+    "database": {
+        "enabled": false,
+        "type": "mongodb",
+        "url": "mongodb://localhost:27017/api_docs",
+        "database": "api_docs",
+        "collections": {
+            "documentation": "documentation",
+            "endpoints": "endpoints",
+            "types": "types"
+        },
+        "mapping": {
+            "createCollections": true,
+            "includeTypeSchemas": true
+        }
+    },
+    "files": {
+        "outputDir": "./docs",
+        "analysisFilename": "analysis.json",
+        "docsFilename": "ai-analysis.md",
+        "saveRawAnalysis": true,
+        "saveAIDocs": true,
+        "timestampFiles": true
+    },
+    "framework": {
+        "autoDetect": true
+    },
+    "verbose": false
+}
