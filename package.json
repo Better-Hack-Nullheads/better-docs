@@ -1,6 +1,6 @@
 {
     "name": "@null_heads/better-docs-universal",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Universal TypeScript framework documentation generator - works with Express, NestJS, Fastify, Koa and more",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
