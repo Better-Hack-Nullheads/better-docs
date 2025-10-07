@@ -6,16 +6,16 @@ Universal TypeScript framework documentation generator - works with Express, Nes
 
 ```bash
 # Install
-npm install -g @better-docs/universal
+npm i @null_heads/better-docs-universal
 
 # Configure
-better-docs config
+npx @null_heads/better-docs-universal config
 
 # Set API key
 export GOOGLE_AI_API_KEY="your_key_here"
 
 # Generate docs
-better-docs analyze ./your-project
+npx @null_heads/better-docs-universal generate ./your-project
 ```
 
 ## Documentation

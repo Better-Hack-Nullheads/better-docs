@@ -1,5 +1,5 @@
 {
-    "name": "@better-docs/universal",
+    "name": "@null_heads/better-docs-universal",
     "version": "1.0.0",
     "description": "Universal TypeScript framework documentation generator - works with Express, NestJS, Fastify, Koa and more",
     "main": "dist/index.js",
@@ -28,13 +28,12 @@
         "universal",
         "framework-agnostic"
     ],
-    "author": "Better-Hack-Nullheads",
+    "author": "null_heads",
     "license": "MIT",
     "dependencies": {
         "@ai-sdk/anthropic": "^1.0.0",
         "@ai-sdk/google": "^1.0.0",
         "@ai-sdk/openai": "^1.0.0",
-        "@better-docs/universal": "file:better-docs-universal-1.0.0.tgz",
         "ai": "^3.0.0",
         "commander": "^11.0.0",
         "dotenv": "^17.2.3",
