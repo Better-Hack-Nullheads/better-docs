@@ -55,10 +55,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/better-hack/better-docs.git"
+        "url": "https://github.com/Better-Hack-Nullheads/better-docs.git"
     },
     "bugs": {
-        "url": "https://github.com/better-hack/better-docs/issues"
+        "url": "https://github.com/Better-Hack-Nullheads/better-docs/issues"
     },
-    "homepage": "https://github.com/better-hack/better-docs#readme"
+    "homepage": "https://github.com/Better-Hack-Nullheads/better-docs#readme"
 }
